@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>CHURN RATE CALCULATION</title>
+    </head>
+    <body>
+        <h3 align="center"CHURN RATE CALCULATION></h3>
+        <h5 align="center">Sanjana sakthi G (26002950)</h5>
+        <form method="POST">
+            {%csrf_token%}
+            <label>initial customer:<label>
+            <input type="number" value="{{initialCust}}" name="initial_customer"><br><br>
+            <label>present customer:</label>
+            <input type="number" value="{{PresentCust}}" name="present_customer"><br><br>
+            <input type="submit" value="Calculate"><br><br>
+            <label>chur rate:</label>
+            <input type="number" value="{{churn}}"><br><br>
+        </form>
+    </body>
+</html>
